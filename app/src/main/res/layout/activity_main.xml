@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textAlignment="center"
+        android:textColor="@color/color_text_dark"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/map_image_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chinese_municipalities" />
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:labelFor="@id/editTextMunicipality"
+        android:text="@string/input_hint"
+        android:textColor="@color/color_text_dark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextMunicipality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/input_hint"
+        android:imeOptions="actionGo"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+</LinearLayout>
